@@ -3,16 +3,16 @@
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 E-commerce businesses rely on sales forecasts to make **inventory, pricing, and revenue planning decisions**. However, inaccurate forecasts can lead to **overstocking, stockouts, and missed revenue opportunities**.
 
 This project performs **exploratory sales analytics and demand forecasting** to understand historical sales behavior and evaluate forecasting approaches for **short-term business planning**.
 
-> ⚠️ The goal is not just to forecast sales, but to **understand forecast reliability and its decision impact**.
+>  The goal is not just to forecast sales, but to **understand forecast reliability and its decision impact**.
 
 ---
 
-## ❓ Why This Problem Is Hard
+## Why This Problem Is Hard
 - Sales data is **non-stationary** and affected by seasonality and promotions  
 - Forecast errors have **asymmetric business costs**  
 - Historical patterns do not always persist  
@@ -22,7 +22,7 @@ This project explicitly addresses these challenges by **comparing baseline model
 
 ---
 
-## 📊 Data Overview
+##  Data Overview
 - Transaction-level e-commerce sales data  
 - Time-indexed revenue, profit, and order metrics  
 - Aggregated into **monthly sales series** for forecasting  
@@ -31,9 +31,9 @@ This project explicitly addresses these challenges by **comparing baseline model
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
-### 1️⃣ Exploratory Data Analysis (EDA)
+### 1️ Exploratory Data Analysis (EDA)
 - Trend and seasonality analysis  
 - Category-wise and region-wise sales breakdown  
 - KPI analysis:
@@ -43,7 +43,7 @@ This project explicitly addresses these challenges by **comparing baseline model
 
 ---
 
-### 2️⃣ Baseline Forecasting
+### 2️ Baseline Forecasting
 - Naïve forecast (last observed value)  
 - Moving average benchmark  
 
@@ -51,28 +51,28 @@ Baselines are used to **prevent overestimating model performance**.
 
 ---
 
-### 3️⃣ Time Series Modeling
+### 3️ Time Series Modeling
 - Stationarity testing  
 - ARIMA model selection and fitting  
 - Residual diagnostics to validate model assumptions  
 
 ---
 
-### 4️⃣ Forecast Evaluation
+### 4️ Forecast Evaluation
 - Error metrics (e.g., MAPE)  
 - Comparison against baseline forecasts  
 - Interpretation of forecast uncertainty  
 
 ---
 
-### 5️⃣ Visualization & Reporting
+### 5️ Visualization & Reporting
 - Interactive **Power BI dashboards**  
 - Forecast vs actual comparisons  
 - KPI-driven visual narratives for stakeholders  
 
 ---
 
-## 📈 Key Insights
+##  Key Insights
 - Sales exhibit strong **seasonal patterns** and long-term upward trends  
 - ARIMA improves over naïve baselines but remains sensitive to volatility  
 - Forecast accuracy varies significantly across product segments  
@@ -80,14 +80,14 @@ Baselines are used to **prevent overestimating model performance**.
 
 ---
 
-## 💼 Business Interpretation of Errors
+##  Business Interpretation of Errors
 - **Over-forecasting** risks excess inventory and cash-flow lock-in  
 - **Under-forecasting** risks stockouts and lost sales  
 - Forecasts should therefore be treated as **decision ranges**, not point estimates  
 
 ---
 
-## ⚠️ Assumptions & Limitations
+##  Assumptions & Limitations
 - Forecasts assume historical patterns persist into the near future  
 - External drivers (marketing campaigns, pricing changes) are not modeled  
 - ARIMA captures **linear temporal dependencies** only  
@@ -95,14 +95,14 @@ Baselines are used to **prevent overestimating model performance**.
 
 ---
 
-## 🧠 Practical Applications
+##  Practical Applications
 - Monthly inventory planning  
 - Revenue target setting  
 - Sales performance monitoring dashboards  
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 - Incorporate exogenous variables (promotions, holidays)  
 - Compare ARIMA with ETS / Prophet models  
 - Translate forecast uncertainty into inventory safety buffers  
@@ -110,7 +110,7 @@ Baselines are used to **prevent overestimating model performance**.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Python  
 - Pandas, NumPy  
 - Statsmodels  
@@ -119,7 +119,7 @@ Baselines are used to **prevent overestimating model performance**.
 
 ---
 
-## 📎 Tools Used
+##  Tools Used
 - **Power BI** – Interactive dashboards and KPI visualization  
 - **Jupyter Notebook** – Data analysis, modeling, and experimentation  
 
